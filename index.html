@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venda seu carro</title>
+    <title>Venda de carros</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="caixainputs">
-        <label for="title">Título do anúncio <span class="obrigatorio">*</span>
-    </label>
-    <input type="text" name="title" id="title" class="block" placeholder="Digite um título para o anúcio">
-    </div>
-    <div class="caixainputs">
-        <label for="title">Preço <span class="obrigatorio">*</span>
-    </label>
-    </div>
     <div class="container">
-        <header class="cabecalho">
+   
+ <div class="form-container"> 
+    <div class="form-header">
+        <p>Formulário</p>
+        
+     </div>
+     </div>
+     <div class="form-body">
+<h1 class="titulo-form">Venda Fácil Seu Carro</h1>
+<p>Descreva as características do seu veículo e marque as opcionais que ele possui.</p>
+     <header class="cabecalho">
             <h3>Cadastre seu veículo para vender mais rápido</h3>
-        </header>
-        <div class="form-conteiner">
-            <div class="form-header">
-                <p>Formulário</p>
-            </div>
+             <form>
+        <div class="caixainputs">
+            <label for="title">Título do anuncio <span class="campo-obrigatorio">*</span>
+            </label>
         </div>
-        <div class="form-body">
-<h1 class="tituloform">Venda fácil seu carro</h1>
-            <p>Descreva as características do seu carro e marque os opcionais que ele possui.</p>
+          <div class="caixainputs">
+            <label for="title">Preço<span class="campo-obrigatorio">*</span>
+            </label>
+            <input type="text" name="title" id="title" class="block" 
+            placeholder="Digite um título para o anúncio">
         </div>
+    </form>
+ </header>
+     </div>
     </div>
-
 </body>
 </html>
