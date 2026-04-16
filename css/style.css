@@ -16,8 +16,14 @@ p, label {
     color: #444;
 }
 
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
 .cabecalho {
     height: 250px;
     padding: 20px;
-    background-color: #673ab7;
+    background-color: #ddc9ff;
 }
