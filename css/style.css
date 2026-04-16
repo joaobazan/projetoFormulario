@@ -34,3 +34,11 @@ textarea {
     padding: 20px;
     background-color: #bc95ff;
 }
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: -46px;
+}
