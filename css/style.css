@@ -12,6 +12,10 @@ h1, h2, h3, h3, h4, h5, h6 {
     color: #333;
 }
 
+p, label {
+    color: #444;
+}
+
 .cabecalho {
     height: 250px;
     padding: 20px;
