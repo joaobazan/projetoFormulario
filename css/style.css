@@ -1,3 +1,15 @@
-h1 {
-    color: red;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serit;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+.cabecalho {
+    height: 160px;
+    padding: 20px;
+    background-color: #673ab7;
 }
