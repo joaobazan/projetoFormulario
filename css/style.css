@@ -16,17 +16,17 @@ p, label {
     color: #444;
 }
 
-input {
+.input {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
 
-input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
+.input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
     width: 400px;
 }
 
-textarea {
+.textarea {
     padding: 10px 5px;
 }
 .cabecalho {
