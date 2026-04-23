@@ -58,3 +58,15 @@ textarea {
     height: 45px;
     list-style: 45px;
 }
+
+.form-body {
+    padding: 30px;
+}
+
+.titulo-form {
+    margin-bottom: 15px;
+}
+
+.form-body p {
+    margin-bottom: 20px;
+}
