@@ -2,93 +2,91 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-
 body {
-    background-color: #f0ebf8;
+   background-color: rgb(168, 247, 220);
 }
-
-h1, h2, h3, h3, h4, h5, h6 {
-    color: #333;
+h1 h2 h3 h4 h5 h6 {
+  color: #333;
 }
-
 p, label {
-    color: #444;
+  color: #444;
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
+.input{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
 }
+.input[type="text"], .input[type=number], .input[type=date] {
+  width: 400px;
+ }
 
-input[type="text"], input[type="number"], input[type="date"], input[type="file"], textarea {
-    width: 400px;
-}
+.textarea {
+  padding: 10px 5px;
+ }
 
-textarea {
-    padding: 10px 5px;
-}
 .cabecalho {
-    height: 400px;
+  background-color: rgb(255, 255, 255);
+    height: 700px;
     padding: 20px;
-    background-color: #bc95ff;
+    
 }
-
 .form-container {
-    background-color: #fdfdfd;
-    width: 60%;
+    background-color: rgb(90, 250, 229);
+    width: 50%;
+    padding: 20px;
     margin: 0 auto;
     position: relative;
-    top: -46px;
+    top: -20px;
 }
-
 .form-header {
-    border-bottom: 1px solid #fdfdfd;
-    height: 45px;
+  border-bottom: 1px solid #dfdfdf;
+  height: 45px;
 }
 
 .form-header p{
-    color: #673ab7;
-    border-bottom: 2px solid #673ab7;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    text-transform: uppercase;
-    height: 45px;
-    list-style: 45px;
+  color: #ffdada;
+  border-bottom: 1px solid #fdfdfd;
+  width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  height: 45px;
+  list-style: 45px;
 }
-
 .form-body {
-    padding: 30px;
+  padding:30px;
 }
 
-.titulo-form {
-    margin-bottom: 15px;
-}
+.titulo-form{
+  margin-bottom: 15px;
 
-.form-body p {
-    margin-bottom: 20px;
+}
+.form-body p{
+  margin-bottom: 20px;
 }
 
 .campo-obrigatorio {
-    color: #d80835;
+  color: red;
 }
 
-.caixaInputs {
-    margin-bottom: 35px;
+.caixainputs {
+  margin-bottom: 20px;
 }
 
 .block {
-    display: block;
+  display: block;
 }
-
 .caixaOpcional {
-    display: inline-block;
-    margin: 0 30px 0 30px;
+  display: inline-block;
+  margin: 0 30px 0 30px;
+}
+.caixaOpcional li {
+  list-style: none;
+  margin-bottom: 5px;
 }
 
-.caixaOpcional li {
-    list-style: none;
-    margin-bottom: 5px;
+.btn-submit {
+margin-top: 15px;
 }
