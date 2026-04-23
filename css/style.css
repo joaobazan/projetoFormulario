@@ -90,3 +90,20 @@ p, label {
 .btn-submit {
 margin-top: 15px;
 }
+
+.btn-submit {
+    background-color: aqua;
+    color: #fdfdfd;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: black;
+    border-color: black;
+}
