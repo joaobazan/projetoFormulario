@@ -5,7 +5,7 @@
     
 }
 body {
-   background-color: rgb(255, 101, 101);
+   background-color: rgb(247, 212, 58);
 }
 h1 h2 h3 h4 h5 h6 {
   color: #333;
@@ -27,7 +27,7 @@ textarea {
  }
 
 .cabecalho {
-  background-color: rgb(250, 130, 130);
+  background-color: rgb(255, 196, 0);
     height: 160px;
     padding: 20px;
 }
@@ -46,8 +46,8 @@ textarea {
 }
 
 .form-header p{
-  color: #ffdada;
-  border-bottom: 1px solid #f8a5ba;
+  color: #f1d96a;
+  border-bottom: 1px solid #ffae00cb;
   width: 100%;
   margin: 0 auto;
   text-transform: uppercase;
@@ -88,7 +88,7 @@ textarea {
 
 .btn-submit {
 margin-top: 15px;
-background-color: rgb(255, 4, 100);
+background-color: rgb(255, 213, 24);
 color: #000000;
 border: 15px solid transparent;
 width: 200px;
@@ -98,7 +98,7 @@ text-transform: uppercase;
 transition: 0.5s;
 }
 .btn-submit:hover {
-  background-color: #fa96bf;
-  color: rgb(255, 175, 175);
-  border-color: rgb(255, 191, 191);
+  background-color: hsl(39, 44%, 49%);
+  color: rgb(255, 231, 94);
+  border-color: rgb(201, 193, 126);
 }
