@@ -5,7 +5,7 @@
     
 }
 body {
-   background-color: rgb(168, 247, 220);
+   background-color: rgb(255, 101, 101);
 }
 h1 h2 h3 h4 h5 h6 {
   color: #333;
@@ -14,32 +14,31 @@ p, label {
   color: #444;
 }
 
-.input{
+input{
   border: none;
-  border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 20px 0;
 }
-.input[type="text"], .input[type=number], .input[type=date] {
+input[type="text"], input[type=number], input[type=date] {
   width: 400px;
  }
 
-.textarea {
+textarea {
   padding: 10px 5px;
  }
 
 .cabecalho {
-  background-color: rgb(255, 255, 255);
-    height: 700px;
+  background-color: rgb(250, 130, 130);
+    height: 160px;
     padding: 20px;
-    
 }
 .form-container {
-    background-color: rgb(90, 250, 229);
+    background-color: rgb(230, 14, 14);
     width: 50%;
     padding: 20px;
     margin: 0 auto;
     position: relative;
     top: -20px;
+    
 }
 .form-header {
   border-bottom: 1px solid #dfdfdf;
@@ -48,7 +47,7 @@ p, label {
 
 .form-header p{
   color: #ffdada;
-  border-bottom: 1px solid #fdfdfd;
+  border-bottom: 1px solid #f8a5ba;
   width: 100%;
   margin: 0 auto;
   text-transform: uppercase;
@@ -63,7 +62,7 @@ p, label {
   margin-bottom: 15px;
 
 }
-.form-body p{
+.form-body .p{
   margin-bottom: 20px;
 }
 
@@ -89,21 +88,17 @@ p, label {
 
 .btn-submit {
 margin-top: 15px;
+background-color: rgb(255, 4, 100);
+color: #000000;
+border: 15px solid transparent;
+width: 200px;
+height: 65px;
+cursor: pointer;
+text-transform: uppercase;
+transition: 0.5s;
 }
-
-.btn-submit {
-    background-color: aqua;
-    color: #fdfdfd;
-    border: 2px solid transparent;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-
 .btn-submit:hover {
-    background-color: #fff;
-    color: black;
-    border-color: black;
+  background-color: #fa96bf;
+  color: rgb(255, 175, 175);
+  border-color: rgb(255, 191, 191);
 }
