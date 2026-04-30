@@ -1,0 +1,67 @@
+function salvarCarro(event) {
+    event.preventDefault();
+
+    let titulo = document.getElementById('title').value;
+    let preco = document.getElementById('preco').value;
+    let marca = document.getElementById('marca').value;
+    let modelo = document.getElementById('modelo').value;
+    
+    let cambioSelecionado = document.querySelector('input[name="marcha"]:checked');
+
+    let cambio = cambioSelecionado ? cambioSelecionado.id : "Não informado";
+
+    let carro = {
+        id: Date.now(),
+        titulo,
+        preco,
+        marca,
+        modelo,
+        cambio
+    };
+    
+    let carros = JSON.parse(localStorage.getItem("carros")) || [];
+    carros.push(carro);
+    localStorage.setItem("carros", JSON.stringify(carros));
+
+    adicionarNaTela(carro);
+
+    document.querySelector("form").reset();
+}
+
+function adicionarNaTela(carro) {
+    let lista = document.getElementById('listaCarros')
+    let card = document.createElement('div');
+    card.classList.add('card');
+    card.innerHTML = `
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThWNsJtZJDuK_wdlijjU9C_8Rk0VTtV9Mqog&s= ${Math.random()}">
+    <h3>${carro.titulo}<h3>
+    <p><strong>Preço:</strong> R$ ${carro.preco}</p>
+    <p><strong>Marca:</strong> ${carro.marca}</p>
+    <p><strong>Modelo:</strong> ${carro.modelo}</p>
+    <p><strong>Câmbio:</strong> ${carro.cambio}</p> 
+    
+    <button onclick = "excluirCarro(${carro.id})">Excluir</button>
+    `
+
+    lista.appendChild(card);
+}
+
+Window.onload = function () {
+    let carros = JSON.parse(localStorage.getItem ('carros')) || [];
+
+    carros.forEach(carro => {
+        adicionarNaTela(carro);
+    });
+}
+
+function excluirCarro(id) {
+    let carro = JSON.parse(localStorage.getItem('carros')) || [];
+
+    carro = carro.filter(carro => carro.id !== id);
+
+    localStorage.setItem('carros', JSON.stringify(carros));
+
+    document.getElementById('listaCarros').innerHTML = "";
+
+    carro.forEach(carro => adicionarNaTela(carro));
+}
